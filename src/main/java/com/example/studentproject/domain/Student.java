@@ -13,16 +13,16 @@ public class Student {
     @NotNull(groups=Update.class)
     private Long id;
     private String firstName;
-    private String lastName;
+    private String surname;
 
     public Student() {
       //means you can create a student without a first name and a surname...
       //if you change it to protected, then you cant
     }
 
-    public Student(String firstName, String lastName) {
+    public Student(String firstName, String surname) {
         this.firstName = firstName;
-        this.lastName = lastName;
+        this.surname = surname;
     }
     // create constructor to hold all this fields /\
     public Long getId() {
@@ -33,20 +33,20 @@ public class Student {
         this.id = id;
     }
 
-    public String getFirst_name() {
+    public String getFirstname() {
         return firstName;
     }
 
-    public void setFirst_name(String first_name) {
+    public void setFirstname(String firstName) {
         this.firstName = firstName;
     }
 
-    public String getLast_name() {
-        return lastName;
+    public String getLastname() {
+        return surname;
     }
 
-    public void setLast_name(String last_name) {
-        this.lastName = lastName;
+    public void setLastname(String surname) {
+        this.surname = surname;
     }
 
     public interface Update {

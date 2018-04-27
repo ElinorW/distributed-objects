@@ -8,4 +8,5 @@ package com.example.studentproject.repository;
 
 public interface StudentRepository extends JpaRepository<Student, Long> {
         List<Student>findByFirstNameContainingIgnoreCase(String searchTerm);
+        //find by is just the same as "select" in sql
 }
